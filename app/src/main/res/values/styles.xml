@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Application Theme -->
+    <style name="Theme.MufasaRobot" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/deep_gold</item>
+        <item name="colorPrimaryVariant">@color/deep_gold_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/royal_blue</item>
+        <item name="colorSecondaryVariant">@color/royal_blue_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Tertiary colors -->
+        <item name="colorTertiary">@color/emerald_green</item>
+        <item name="colorOnTertiary">@color/white</item>
+
+        <!-- Surface and Background -->
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorOnBackground">@color/black</item>
+
+        <!-- Error colors -->
+        <item name="colorError">@color/error_red</item>
+        <item name="colorErrorContainer">@color/error_container</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorOnErrorContainer">@color/error_red</item>
+    </style>
+
+    <!-- TextInputLayout Style -->
+    <style name="Widget.MufasaRobot.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/deep_gold</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="hintTextColor">@color/deep_gold</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="placeholderTextColor">@color/gray</item>
+        <item name="endIconTint">@color/deep_gold</item>
+        <item name="startIconTint">@color/deep_gold</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.MufasaRobot.Corner16</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="Widget.MufasaRobot.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/deep_gold</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:paddingHorizontal">24dp</item>
+    </style>
+
+    <!-- Outlined Button Style -->
+    <style name="Widget.MufasaRobot.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/deep_gold</item>
+        <item name="strokeColor">@color/deep_gold</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="Widget.MufasaRobot.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">8dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="contentPadding">20dp</item>
+    </style>
+
+    <!-- Shape Appearance -->
+    <style name="ShapeAppearance.MufasaRobot.Corner16" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- Toolbar Text Appearance -->
+    <style name="TextAppearance.MufasaRobot.Toolbar" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/deep_gold</item>
+    </style>
+
+    <!-- Switch Style -->
+    <style name="Widget.MufasaRobot.Switch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:thumbTint">@color/emerald_green</item>
+        <item name="android:trackTint">@color/emerald_green_light</item>
+    </style>
+
+    <!-- Progress Bar Style -->
+    <style name="Widget.MufasaRobot.ProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressTint">@color/royal_blue</item>
+        <item name="android:progressBackgroundTint">@color/royal_blue_light</item>
+    </style>
+
+    <!-- Dialog Theme -->
+    <style name="Theme.MufasaRobot.Dialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+</resources>

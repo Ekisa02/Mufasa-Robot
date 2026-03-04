@@ -1,31 +1,101 @@
-# Mufasa Robot
+# 🦁 Mufasa Robot - MT5 Trading Automation
 
-## Project Overview
-Mufasa Robot is an advanced robotic system designed to perform various tasks autonomously. It leverages cutting-edge technologies to interact with its environment, making it suitable for a range of applications from home automation to industrial processes. This project aims to provide a flexible and scalable robot that can be customized for different use cases.
+<div align="center">
 
-## Tech Stack
-- **Programming Languages**: Python, C++
-- **Frameworks & Libraries**:
-  - Robot Operating System (ROS)
-  - OpenCV for image processing
-  - TensorFlow for machine learning
-- **Databases**: SQLite for storing configuration and logs
-- **Tools**: Git for version control, Docker for containerization
+![Kotlin](https://img.shields.io/badge/Kotlin-2.1.0-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![Compose](https://img.shields.io/badge/Jetpack%20Compose-2025.02.00-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)
+![Min SDK](https://img.shields.io/badge/minSdk-26-brightgreen?style=for-the-badge&logo=android)
+![Target SDK](https://img.shields.io/badge/targetSdk-35-brightgreen?style=for-the-badge&logo=android)
+![Architecture](https://img.shields.io/badge/Architecture-Clean%20%2B%20MVVM-blueviolet?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-## Architecture
-The architecture of Mufasa Robot consists of the following components:
-- **Sensors**: Various sensors for detecting obstacles, measuring distance, and capturing data.
-- **Actuators**: Motors and servos that provide movement and control.
-- **Control System**: Centralized processing unit that coordinates sensors and actuators, implements algorithms, and executes commands.
+**Professional Mobile Trading Robot Controller for MetaTrader 5**
 
-```
-```mermaid
-graph LR;
-  A[Sensors] --> B[Control System];
-  B --> C[Actuators];
-  B --> D[User Interface];
-  C --> E[Environment];
-```
+[Features](#-features) •
+[Tech Stack](#-tech-stack) •
+[Architecture](#-architecture) •
+[Installation](#-installation) •
+[Documentation](#-documentation) •
+[Contributing](#-contributing)
+
+</div>
+
+---
+
+## 📋 Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Libraries](#-libraries)
+- [Architecture](#-architecture)
+- [Project Structure](#-project-structure)
+- [Installation](#-installation)
+- [Build Configuration](#-build-configuration)
+- [Design System](#-design-system)
+- [Testing Credentials](#-testing-credentials)
+- [Future Backend Integration](#-future-backend-integration)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Contact](#-contact)
+
+---
+
+## 🎯 Project Overview
+
+**Mufasa Robot** is a professional-grade mobile trading robot controller designed to interface with MetaTrader 5 (MT5) accounts. This frontend application provides traders with real-time monitoring and control over their automated trading strategies.
+
+### Purpose
+Enable traders to:
+- 🔌 Connect and monitor MT5 account status
+- 🤖 Control bot operations (Start/Stop/Auto-trade)
+- 📊 Track trade activity in real-time
+- ⚙️ Configure automation parameters
+- 🔔 Receive instant system feedback
+
+Built with production-ready architecture, this app is designed for seamless backend integration, supporting REST APIs, WebSocket connections, and JWT authentication.
+
+---
+
+## ✨ Features
+
+| Screen | Features |
+|--------|----------|
+| **Splash** | Animated logo, automatic navigation |
+| **Login** | MT5-style credentials (Login ID, Server, Password), validation feedback, loading states |
+| **Dashboard** | Connection status card with animated indicator |
+| | Bot status card with start/stop controls |
+| | Trade activity monitoring with P/L display |
+| | Automation controls with risk level selection |
+| | Real-time user feedback notifications |
+| | Pull-to-refresh functionality |
+| | Animated FAB for data refresh |
+
+---
+
+## 🛠 Tech Stack
+
+| Category | Technology | Version |
+|----------|------------|---------|
+| **Language** | Kotlin | 2.1.0 |
+| **UI Framework** | Jetpack Compose | 2025.02.00 |
+| **Design System** | Material 3 | - |
+| **Architecture** | Clean Architecture + MVVM | - |
+| **Navigation** | Jetpack Navigation Compose | 2.8.7 |
+| **Asynchronous** | Kotlin Coroutines & Flow | 1.8.1 |
+| **Build System** | Gradle Kotlin DSL | 8.7.0 |
+| **Min SDK** | Android 8.0 (Oreo) | 26 |
+| **Target SDK** | Android 15 | 35 |
+
+---
+
+## 📚 Libraries
+
+### Core Android
+```kotlin
+implementation("androidx.core:core-ktx:1.15.0")
+implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+implementation("androidx.activity:activity-compose:1.10.1")
 
 ## Installation Instructions
 1. **Clone the Repository**:

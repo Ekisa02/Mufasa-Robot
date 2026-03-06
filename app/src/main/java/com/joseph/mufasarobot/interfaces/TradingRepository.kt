@@ -10,7 +10,7 @@ import com.joseph.mufasarobot.models.UserFeedback
 import kotlinx.coroutines.flow.Flow
 
 interface TradingRepository {
-    suspend fun connectMT5(email: String, password: String): Resource<MT5Connection>
+    suspend fun connectMT5(login: String, password: String, server: String): Resource<MT5Connection>
     suspend fun disconnectMT5(): Resource<Unit>
     suspend fun getConnectionStatus(): Flow<Resource<MT5Connection>>
 
